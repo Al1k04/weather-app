@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <script
+      src="https://kit.fontawesome.com/4458536899.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/login.js" type="module"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Login Here</h1>
+        <label for="username">Username</label>
+        <input type="email" placeholder="Email or phone" id="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required />
+
+        <button class="submit-btn" type="submit" id="submit">Login</button>
+
+        <div class="social">
+          <button class="google-btn" id="google">
+            <i class="fa-brands fa-google"></i>Google
+          </button>
+          <button class="facebook-btn" id="facebook">
+            <i class="fa-brands fa-facebook"></i>Facebook
+          </button>
+        </div>
+
+        <div class="login-prompt">
+          <h3>Don't an account?</h3>
+          <a href="/register.html">Create Account Here</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

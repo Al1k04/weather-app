@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(/assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+}
+
+.container {
+  margin: 200px auto;
+  width: 450px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1b3347;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label[for="username"],
+label[for="password"] {
+  font-size: 1.3rem;
+  color: #1b3347;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px 16px;
+  border: 0;
+  outline: 0;
+  background: #98b1d3;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #1b3347;
+  margin-bottom: 25px;
+}
+
+input[type="password"] {
+  margin-bottom: 50px;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: #d7e0ff;
+}
+
+.submit-btn {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px 16px;
+  font-size: 1.1rem;
+  background: #1b3347;
+  color: #d7e0ff;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.submit-btn:hover,
+.google-btn:hover,
+.facebook-btn:hover {
+  background: #020323;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.google-btn,
+.facebook-btn {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+  width: 35%;
+  padding: 10px 30px;
+  background: #1b3347;
+  color: #d7e0ff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-prompt {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.login-prompt a {
+  color: #1b3347;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
